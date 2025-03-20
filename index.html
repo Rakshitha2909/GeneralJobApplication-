@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Application Form</title>
+    </head>
+    <body>
+        <h1><strong>Application Form</strong></h1>
+        <h2>Primary Information</h2>
+        <form action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="first-name">First Name: </label>
+                <input type="text" id="first-name" name="first name" placeholder="First Name" required>
+                
+                <label for="last-name"> Last Name: </label>
+                <input type="text" id="last-name" name="last name" placeholder="Last Name">
+                
+                <label for="experience">Experience: </label>
+                <input type="number" min="0" max="50" value="0">
+            </fieldset>
+            
+            <fieldset>
+                <legend> Contact Information</legend>
+                <label for="Phone">Phone Number: </label>
+                <input type="tel" id="Phone" name="telPhone" value="0000000000">
+                <label for="email">Email: </label>
+                <input type="email" id="Email" placeholder="example@gmail.com" name="email">
+                <h3> Subscribe to Text Message Alerts</h3>
+                <input type="checkbox" name="message">By opting in, I agree to receive text message.
+                
+            </fieldset>
+            <fieldset>
+                <legend> Preferred Job Details </legend>
+                <h5>What are you looking for in your next role</h5>
+                <label for="job">Ideal Job Title: </label>
+                <input type="text" id="job" name="job" placeholder=" Job title">
+                <fieldset>
+                    <legend>Employment Type:</legend>
+                    <input type="radio" name="time" id="time">
+                    <label for="time">Full-time</label>
+                    <input type="radio" name="time" id="time2">
+                    <label for="time2">Part-time</label>
+                </fieldset>
+                <label for="work"> Desired Work Setting: </label>
+                <select id="work" name="work" >
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="Remote">Remote</option>
+                    <option value="Onsite">On-Site</option>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="NoPreference">No Preference</option>
+                </select>
+                <label for="Authorization">Work Authorization: </label>
+                <select id="Authorization" name="Authorization">
+                    <option value="" disabled selected>Select an option </option>
+                    <option value="needh1b"> Need H1b</option>
+                    <option value="haveh1b">Have H1b</option>
+                    <option value="GreenCard">GreenCard</option>
+                    <option value="opt">OPT</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Current Location Information: </legend>
+                <label for="address">Address 1:</label>
+                <input type="text" id="address" placeholder="Address">
+                <label for="zip">Zip:</label>
+                <input type="number" id="zip" placeholder="00000">
+                <label for="CityState">City,state</label>
+                <input type="text" id="CityState" placeholder=" City or State">
+                <label for="Country">Country :</label>
+                <input type="text" id="country" placeholder="country">
+            </fieldset>
+            
+        </form>
+    </body>
+</html>
